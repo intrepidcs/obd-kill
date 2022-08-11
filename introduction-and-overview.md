@@ -12,7 +12,7 @@ Thank you for purchasing an Intrepid Control Systems OBD-Kill tool. Intrepid Con
 
 ### 2.3. Operational Overview
 
-\------
+With a Raspberry Pi Pico, the uses are infitite! However, this isn't just a Raspberry Pi Pico, your OBD-Kill has built in programmable LEDs, Pulse Width Modulator (PWM), and CAN Tx capabilities. Plus, using the General Purpose IO pins, you're not limited to the to your OBD-Kill; you can connect to other OBD-Kills, LCD screens, sensors, and more!
 
 ### **2.4. Block Diagram**
 
@@ -23,7 +23,7 @@ Thank you for purchasing an Intrepid Control Systems OBD-Kill tool. Intrepid Con
 * 1x CAN channel&#x20;
 * 12 LEDs&#x20;
 * 2x Programmable Buttons&#x20;
-* 1x Buzzer
+* 1x Pulse Width Modulator (Buzzer)
 * Compatible with Raspberry Pi Pico development including C/C++, Micro Python and others. USB console app for generating arbitrary CAN messages with 8ns timing resolution&#x20;
 * Open source schematic and example programs&#x20;
 * CHV talk&#x20;
