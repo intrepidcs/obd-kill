@@ -9,7 +9,7 @@ Download UF2 File at [https://cdn.intrepidcs.net/guides/OBD-Kill/defcon30\_uf2.z
 * Connect the micro USB cable to your host computer.&#x20;
 * Connect the other end of the micro USB cable to the Pico while you press and hold the **BOOTSEL** button on the Pico.
 
-![](.gitbook/assets/image1.gif)
+![](.gitbook/assets/image11-1.png)
 
 * Release the button once the cable is connected.
 
