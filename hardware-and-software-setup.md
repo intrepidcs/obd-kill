@@ -1,21 +1,25 @@
 # Hardware and Software Setup
 
-### 4. Hardware and Software Setup
+### 4. **How to download UF2 on your OBD-Kill**
 
-### 4.1. Vehicle Spy Installation
+Download UF2 File at [https://cdn.intrepidcs.net/guides/OBD-Kill/defcon30\_uf2.zip](https://cdn.intrepidcs.net/guides/OBD-Kill/defcon30\_uf2.zip)&#x20;
 
-1. Run the Vehicle Spy installer from the CD-ROM or from the download link&#x20;
-2. Select Language&#x20;
-3. Start Vehicle Spy setup wizard&#x20;
-4. Review and accept license agreement&#x20;
-5. Select installation type (new or repair … most cases will be new)&#x20;
-6. Select destination location (we recommend the default location)&#x20;
-7. Select Start Menu folder (we recommend the default location)&#x20;
-8. Review installation options and begin installation&#x20;
-9. Install VCP Drivers
-10. &#x20;Install WinPcap
-11. &#x20;Install ICS port Drive
+### CONNECT THE OBD-Kill PICO TO YOUR COMPUTER&#x20;
 
-### **4.2. Hardware Connections**
+* Connect the micro USB cable to your host computer.&#x20;
+* Connect the other end of the micro USB cable to the Pico while you press and hold the **BOOTSEL** button on the Pico.
 
-****
+![](.gitbook/assets/image1.gif)
+
+* Release the button once the cable is connected.
+
+**A disk volume called RPI-RP2 will appear on your computer.**
+
+### INSTALL UF2&#x20;
+
+* Open **RPI-RP2** on your computer by double-clicking it.&#x20;
+* Drag and drop the **.uf2** file that you downloaded earlier.
+
+**RPI-RP2 will unmount and the LED on the Pico will start blinking.**
+
+You’ve just uploaded the first bit of code to your Pico!
