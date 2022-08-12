@@ -33,7 +33,7 @@ p0.irq(lambda p:print(p))
 
 Pin values can be set; however, Signals are easier to control
 
-### Signal (use for LEDs and Buttons)
+### Signal (used for LEDs and Buttons)
 
 [https://docs.micropython.org/en/latest/library/machine.Signal.html](https://docs.micropython.org/en/latest/library/machine.Signal.html)
 
@@ -49,7 +49,7 @@ rightMiddlePin = Pin(10, Pin.OUT)
  
 rightMiddleLED = Signal(rightMiddlePin)
  
-# .can combine constructor to one 
+# can combine constructor to one 
 leftMiddleLED = Signal(Pin(26, Pin.OUT)
  
 rightMiddleLED.on()
@@ -77,7 +77,7 @@ This class provides pulse width modulation output&#x20;
 
 [https://docs.micropython.org/en/latest/library/machine.PWM.html](https://docs.micropython.org/en/latest/library/machine.PWM.html)
 
-A Map containing pitches and their corresponding frequencies
+A Map containing pitches and their corresponding frequencies for the PWM on the OBD-Kill
 
 ```python
 tones = {"B0": 31, "C1": 33, "CS1": 35, "D1": 37, "DS1": 39, "E1": 41, "F1": 44, "FS1": 46, "G1": 49, "GS1": 52,
@@ -115,4 +115,41 @@ for i in reversed(range(100, 1100)):
         utime.sleep_ms(3)
 ```
 
-Create a serial channel
+### Serial Communication Interface
+
+UART implements the standard UART/USART duplex serial communications protocol. At the physical level it consists of 2 lines: RX and TX. The unit of communication is a character (not to be confused with a string character) which can be 8 or 9 bits wide.
+
+[https://docs.micropython.org/en/latest/library/machine.UART.html](https://docs.micropython.org/en/latest/library/machine.UART.html)
+
+UART objects can be created and initialised using:
+
+```python
+from machine import UART
+
+uartOne = UART(1, baudrate=9600, tx=Pin(4), rx=Pin(5)) # GP4 is the standard Pin for and transmitting messages is the standard Pin for receiving
+```
+
+A UART object acts like a stream object and reading and writing is done using the standard stream methods:
+
+```python
+uart.read(10)       # read 10 characters, returns a bytes object
+uart.read()         # read all available characters
+uart.readline()     # read a line
+uart.readinto(buf)  # read and store into the given buffer
+uart.write('abc')   # write the characters 'a', 'b', and 'c'
+```
+
+A function to transmit a user-defined message on a specified interval:
+
+```python
+import utime
+from machine import UART
+
+def transmitMessages(occurances, timeBetween, message):
+    for i in range(occurances):
+        uart.write(message + "\n")
+        utime.sleep_ms(timeBetween)
+        
+transmitMessages(5, 50, "Test") # transmit the message "Test" 5 times with 50 seconds between each message
+```
+
