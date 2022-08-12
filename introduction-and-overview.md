@@ -14,6 +14,8 @@ If you purchase the OBD-Kill from the Defcon 30 Car Hacking Village then you wil
 
 With a Raspberry Pi Pico, the uses are infitite! However, this isn't just a Raspberry Pi Pico, your OBD-Kill has built in programmable LEDs, Pulse Width Modulator (PWM), and CAN Tx capabilities. Plus, using the General Purpose IO pins, you're not limited to the to your OBD-Kill; you can connect to other OBD-Kills, LCD screens, sensors, and more!
 
+Additionally, an optional 3-volt coin battery gives you the flexibility to use the LEDs on your OBD-Kill without having to connect to a computer.
+
 ### **2.4. Block Diagram**
 
 _Front Side -_&#x20;
