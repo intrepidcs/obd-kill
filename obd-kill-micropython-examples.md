@@ -77,7 +77,7 @@ This class provides pulse width modulation output
 
 [https://docs.micropython.org/en/latest/library/machine.PWM.html](https://docs.micropython.org/en/latest/library/machine.PWM.html)
 
-A Map containing pitches and their corresponding frequencies for the PWM on the OBD-Kill
+Here is a Map that contains the pitches and their corresponding frequencies. See the next example to see how to access the frequency.
 
 ```python
 tones = {"B0": 31, "C1": 33, "CS1": 35, "D1": 37, "DS1": 39, "E1": 41, "F1": 44, "FS1": 46, "G1": 49, "GS1": 52,
@@ -92,25 +92,29 @@ tones = {"B0": 31, "C1": 33, "CS1": 35, "D1": 37, "DS1": 39, "E1": 41, "F1": 44,
 "DS8": 4978, "rest": -1}py
 ```
 
-The duty cycle is set by using the .duty\_u16() method. This value is divided by 65535 to calculate the duty cycle. A larger number corresponds to a louder volume.
+The duty cycle is set by using the .duty\_u16() method. This value is divided by 65535 to calculate the duty cycle. A larger number corresponds with a louder volume.
 
-Warning: loud noises can be harmful to hearing, especially over long periods of time
+{% hint style="danger" %}
+Warning&#x20;
+
+Use caution when programming large duty cycles. Loud sounds may cause hearing damage. For these examples, the duty cycle will never exceed 1000.
+{% endhint %}
 
 ```python
-buzzer.frequency(tones["C5"]) # set the frequency to match pitch C5
+buzzer.freq(tones["C5"]) # set the frequency to match pitch C5
 buzzer.duty_u16(2000) # set the duty cycle for the pulses to be 1000/65535=1.5%
 ```
 
 Increase the volume (duty cycle) for 3 seconds, hold for 3 seconds, decrease the volume for 3 seconds
 
 ```python
-for i in range(100, 1100):
+for i in range(0, 1000):
         buzzer.duty_u16(i)
         utime.sleep_ms(3)
  
 utime.sleep_ms(3000)
  
-for i in reversed(range(100, 1100)):
+for i in reversed(range(0, 1000)):
         buzzer.duty_u16(i)
         utime.sleep_ms(3)
 ```
