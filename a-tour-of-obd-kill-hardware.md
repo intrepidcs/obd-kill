@@ -18,7 +18,7 @@ The pinout printed on the OBD-Kill for the Left and Right Buttons is reversed. T
 
 ### **3.3 Back Side and Pinout of Case**
 
-![image](https://user-images.githubusercontent.com/93162463/184356662-417014a5-92eb-4f90-b5e6-daa846ccdc3f.png)
+![image](https://user-images.githubusercontent.com/93162463/184426546-d15a3054-99f5-46de-9feb-b2c2e88b0a5e.png)
 
 {% hint style="info" %}
 ### Note
