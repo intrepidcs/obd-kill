@@ -7,7 +7,7 @@ Download the CAN Hack UF2 File at [https://cdn.intrepidcs.net/guides/OBD-Kill/de
 ### CONNECT THE OBD-Kill PICO TO YOUR COMPUTER&#x20;
 
 * Connect the micro USB cable to your host computer.&#x20;
-* Connect the other end of the micro USB cable to the Pico while you press and hold the **BOOTSEL** button on the Pico.
+* Connect the other end of the micro USB cable to the Pico while you press and hold the **BOOTSEL** button on the Pico. This will cause the Raspberry Pi Pico to enter bootloader mode and allow you to upload a new UF2 File.
 
 ![](.gitbook/assets/image11-1.png)
 
@@ -15,7 +15,7 @@ Download the CAN Hack UF2 File at [https://cdn.intrepidcs.net/guides/OBD-Kill/de
 
 **A disk volume called RPI-RP2 will appear on your computer.**
 
-### Load a UF2 File to the Raspberry Pico&#x20;
+### Load a UF2 File to the Raspberry Pi Pico&#x20;
 
 * Open **RPI-RP2** on your computer by double-clicking it.&#x20;
 * Drag and drop the **.uf2** file that you downloaded earlier.
