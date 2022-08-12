@@ -33,7 +33,7 @@ p0.irq(lambda p:print(p))
 
 Pin values can be set; however, Signals are easier to control
 
-### Signal (used for LEDs and Buttons)
+### Signal (used for LEDs)
 
 [https://docs.micropython.org/en/latest/library/machine.Signal.html](https://docs.micropython.org/en/latest/library/machine.Signal.html)
 
