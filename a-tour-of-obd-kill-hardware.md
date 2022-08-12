@@ -6,7 +6,7 @@
 
 The OBD-Kill is enclosed in a lightweight circuit board. 13 LEDs, 2 buttons, CAN interface, and a Pulse Width Modulator are all built into this board. They can be easily controlled by using the Pin class and the pin numbers listed below.
 
-#### **3.2 Front Side and Pinout of Case**
+### **3.2 Front Side and Pinout of Case**
 
 ![image](https://user-images.githubusercontent.com/93162463/184180612-f29cdcd3-3c21-472b-97b8-d9c86c47c3ed.png)
 
