@@ -8,12 +8,22 @@ The OBD-Kill is enclosed in a lightweight circuit board. 13 LEDs, 2 buttons, CAN
 
 ### **3.2 Front Side and Pinout of Case**
 
-![image](https://user-images.githubusercontent.com/93162463/184180612-f29cdcd3-3c21-472b-97b8-d9c86c47c3ed.png)
+![image](https://user-images.githubusercontent.com/93162463/184357970-c7b6a546-1e8f-4b8e-bd6a-b00f62a22489.png)
 
-Note: The pinout listed on the OBD-Kill for the Left and Right Buttons is reversed
+{% hint style="info" %}
+### Note
+
+The pinout listed on the OBD-Kill for the Left and Right Buttons is reversed. The correct GPIO Pin for the left button is Pin 18 and the correct GPIO Pin for the right button is Pin 15.
+{% endhint %}
 
 ### **3.3 Back Side and Pinout of Case**
 
-![image](https://user-images.githubusercontent.com/93162463/184181286-57107c1f-1d09-4ba1-a66e-2aa9c08f804b.png)
+![image](https://user-images.githubusercontent.com/93162463/184356662-417014a5-92eb-4f90-b5e6-daa846ccdc3f.png)
+
+{% hint style="info" %}
+### Note
+
+Note: The pinout listed on the OBD-Kill for the Pusle Width Modulator (Buzzer) is incorrect. The correct GPIO Pin is 20.
+{% endhint %}
 
 ***
