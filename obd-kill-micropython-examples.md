@@ -33,7 +33,7 @@ p0.irq(lambda p:print(p))
 
 Pin values can be set; however, Signals are easier to control
 
-### Signal (used for LEDs and Buttons)
+### Signal (used for LEDs)
 
 [https://docs.micropython.org/en/latest/library/machine.Signal.html](https://docs.micropython.org/en/latest/library/machine.Signal.html)
 
@@ -60,7 +60,7 @@ print(rightMiddleLED.value()) # will print 1
 print(leftMiddleLED.value()) # will print 0
  
  
-# alternate flashing each center eye LED every second
+# alternate flashing each green LED every second
 while True:
   rightMiddleLED.on()
   leftMiddleLED.off()
