@@ -60,7 +60,7 @@ print(rightMiddleLED.value()) # will print 1
 print(leftMiddleLED.value()) # will print 0
  
  
-# alternate flashing each center eye LED every second
+# alternate flashing each green LED every second
 while True:
   rightMiddleLED.on()
   leftMiddleLED.off()
