@@ -2,7 +2,7 @@
 
 ### 6. CANHack MicroPython SDK
 
-### 1. Introduction
+### 6.1 Introduction
 
 There are two ways to mount an attack on a CAN bus. The simplest is a _frame attack_: to use existing CAN hardware – the CAN controller – to send frames on the bus. For example, to send a spoof frame. Or to send frames at such a rate that legitimate frames are slowed or prevented: a _flood attack_ (in a real-time system, a message arriving late is a failure of the system). The other way to mount an attack is to by-pass the CAN hardware and drive carefully crafted signals directly on to the bus: a CAN _protocol attack_.&#x20;
 
@@ -43,11 +43,11 @@ Before going any further there is an important caveat:
 
 > <mark style="color:red;">WARNING. Connecting the CAN hardware directly to a vehicle CAN bus comes with risk and should not be undertaken without understanding this risk. Grounding a vehicle chassis through the USB port of a Pico connected to a laptop, PC or USB hub powered from the mains may cause permanent damage to the vehicle’s electronics and/or the Raspberry Pi Pico and devices it is connected to. The CAN transceiver will tolerate a ground potential difference (“ground offset”) of between -2V/+7V. Connecting pin 2 of the screw terminal to the target system’s ground will establish a common ground reference. The CAN bus must be properly terminated (with 120W resistors at either end). If the CAN bus is already terminated at both ends then the termination on the board should not be engaged. In addition, causing disruption to a vehicle’s CAN bus traffic may be interpreted by the vehicle fault management systems as a hardware fault and cause the vehicle to permanently shut down CAN communications with consequent loss of functionality.</mark>
 
-### 2. CANHack Python API
+### 6.2 CANHack Python API
 
 The CANHack toolkit is provided as a single class `CANHack`.
 
-**2.1 CANHack — CANHack toolkit**&#x20;
+**6.2.1 CANHack — CANHack toolkit**&#x20;
 
 **class CANHack**( \[ _bitrate_=_500_ ] )&#x20;
 
@@ -291,7 +291,7 @@ The purpose of this function is to check that the free-running counter has been 
 
 The CAN frame to send must have been set with a call to set\_frame() before calling this method. This call does not enter into CAN arbitration or participate in the CAN protocol, it merely sends a sequence of bits to the pin. Consequently, the CAN bus must be idle when this function is called.
 
-### 3. Quick start
+### 6.3 Quick start
 
 Connect to the board using a terminal emulator (minicom, PuTTY, rshell, etc.) to get a REPL prompt (use the first serial port – typically /dev/ttyACM0 on Linux – not the second one, which is reserved for MIN).&#x20;
 

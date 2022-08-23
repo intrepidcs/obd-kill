@@ -2,7 +2,7 @@
 
 ### 5. Examples
 
-### Pin
+### 5.1 Pin
 
 A pin object is used to control I/O pins (also known as GPIO - general-purpose input/output). Pin objects are commonly associated with a physical pin that can drive an output voltage and read input voltages. The pin class has methods to set the mode of the pin (IN, OUT, etc) and methods to get and set the digital logic level. For analog control of a pin, see the ADC class.
 
@@ -33,7 +33,7 @@ p0.irq(lambda p:print(p))
 
 Pin values can be set; however, Signals are easier to control
 
-### Signal (used for LEDs)
+### 5.2 Signal (used for LEDs)
 
 [https://docs.micropython.org/en/latest/library/machine.Signal.html](https://docs.micropython.org/en/latest/library/machine.Signal.html)
 
@@ -71,7 +71,7 @@ while True:
   utime.sleep_ms(1000)
 ```
 
-### PWM – Pulse Width Modulation
+### 5.3 PWM – Pulse Width Modulation
 
 This class provides pulse width modulation output
 
@@ -95,7 +95,7 @@ tones = {"B0": 31, "C1": 33, "CS1": 35, "D1": 37, "DS1": 39, "E1": 41, "F1": 44,
 The duty cycle is set by using the .duty\_u16() method. This value is divided by 65535 to calculate the duty cycle. A larger number corresponds with a louder volume.
 
 {% hint style="danger" %}
-Warning&#x20;
+Warning
 
 Use caution when programming large duty cycles. Loud sounds may cause hearing damage. For these examples, the duty cycle will never exceed 1000.
 {% endhint %}
@@ -119,7 +119,7 @@ for i in reversed(range(0, 1000)):
         utime.sleep_ms(3)
 ```
 
-### Serial Communication Interface
+### 5.4 Serial Communication Interface
 
 UART implements the standard UART/USART duplex serial communications protocol. At the physical level it consists of 2 lines: RX and TX. The unit of communication is a character (not to be confused with a string character) which can be 8 or 9 bits wide.
 
