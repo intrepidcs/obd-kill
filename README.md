@@ -5,7 +5,7 @@
 {% hint style="info" %}
 ### Safety Notices
 
-1. Prior to using this product, read, understand, and follow the instructions for this device and any associated software. If do you fully understand the instructions, contact [icssupport@intrepidcs.com](mailto:icssupport%40intrepidcs.com) for support.
+1. Prior to using this product, read, understand, and follow the instructions for this device and any associated software. If you do not fully understand the instructions, contact [icssupport@intrepidcs.com](mailto:icssupport%40intrepidcs.com) for support.
 2. Do not use this product if it has been used outside of the specified operating conditions or is suspected to be damaged.
 3. There are no operator serviceable parts inside this equipment. Should you suspect the device is not operating properly, please contact [icssupport@intrepidcs.com](mailto:icssupport%40intrepidcs.com)
 4. The failure modes of this device should be carefully considered prior to using it to instrument safety critical systems. A single point of failure at this device should not prevent the safe operation of any vehicle system.
